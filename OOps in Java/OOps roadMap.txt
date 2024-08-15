@@ -1,0 +1,19 @@
+Java RoadMap:
+
+From My Physical Register 
+Also Learn From YT Videos
+
+OOps RoadMap In java:
+
+1) Classes And Objects
+2) Class Attributes
+3) Method
+4) Constructor
+5) Modefiers
+6) Encapsulation
+7) Inheritence
+8) Polymorphism
+9) Abstraction
+10)Interface
+
+=> Make the Best Practices To Grip On All Concepts
