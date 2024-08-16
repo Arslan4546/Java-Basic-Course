@@ -2,6 +2,8 @@
 //we cannot call non-static method in static static method
 //you can call non-static method in staic method by creating object of that calss and access by class name and . 
 //ex: A.sumofTwo() in this example A is the class name and other is method name
+//static method can only access the static variable defined in the class 
+//but non-static method can access both static and non-static variables defined in the class
 
 
 
