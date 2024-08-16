@@ -7,6 +7,12 @@ Steps to Perform Encapsulation
 1)Declare the variable of the class as private -> means data hiding.
 2)prvide public getter & setters methods for modify and view the variable values.
 
+Why Encapsulation?
+
+1)Better control of class attributes and methods
+2)Class attributes can be made read-only (if you only use the get method), or write-only (if you only use the set method)
+3)Flexible: the programmer can change one part of the code without affecting other parts
+Increased security of data
 
 
 
