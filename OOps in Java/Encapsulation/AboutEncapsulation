@@ -1,0 +1,12 @@
+
+
+Encapsulation means hiding or binding the data into single capsule 
+and capsule means class or wrapping up of data and methods into a single unit called Encapsulation.
+
+Steps to Perform Encapsulation
+1)Declare the variable of the class as private -> means data hiding.
+2)prvide public getter & setters methods for modify and view the variable values.
+
+
+
+
