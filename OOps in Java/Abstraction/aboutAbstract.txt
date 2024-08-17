@@ -1,0 +1,8 @@
+1. we cannot create object for abstract class but can create object reference.
+2. if a class has abstrat method  then the class must be abstract in that case.
+3. if a class is abstract then it is not mandatory that it has abstract method in it
+4. if any class extends with the abstract class then it must defined the abstract method in chind class from the parent class
+5. in abstraction you will able to hide the details of the method 
+6. abstract method cannot contain any body
+
+
