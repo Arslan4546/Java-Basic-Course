@@ -1,0 +1,60 @@
+Variables are of three types:
+1. Local Variables
+A Variable which is declared inside the body of the method and also  inside the parameter of the method  
+
+
+class a {
+    
+    int method(){
+        int a = 19;
+        int b =12;
+        int c = a+b;
+        return c; 
+    }
+}
+
+and 
+
+
+class a {
+    
+    int method(int a , int b){
+      
+        int c = a+b;
+        return c; 
+    }
+}
+
+2. Instance Variale
+A variable which is declared inside the class but outside of all the methods in the class is called instance Variables
+
+class a {
+      int a = 19;
+        int b =12;
+
+    int method(){
+        int c = this(a+b);
+        return c; 
+    }
+}
+
+
+
+
+
+3. Static Variale
+A variable which is declared with  the Static keyword is called Static variable.
+
+class a {
+      static int a = 19;
+       static  int b =12;
+
+    int method(){
+        int c = this(a+b);
+        return c; 
+    }
+}
+
+
+also overview the images i put in the images section
+

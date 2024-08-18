@@ -1,0 +1,2 @@
+whenever you pass the object reference to the constructor is called copy constructor.
+The main purpose of copy constructor is to Copy content from one constructor to another 
