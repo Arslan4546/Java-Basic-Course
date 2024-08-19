@@ -1,8 +1,8 @@
-About Condition And Expression:
+//About Condition And Expression:
 Har wo Condition jo true ya false return krti hai ik Expression
 but har Expression condition ni hai
 
-Side Effect Of Operator:
+//Side Effect Of Operator:
 One of the most important side effects of operators in Java is unexpected changes in the value of variables, particularly with increment (++) and decrement (--) operators. These operators not only return a value but also modify the value of the variable they are applied to, which can lead to unintended consequences if not used carefully.
 
 Example: Pre-Increment (++a) vs. Post-Increment (a++)
@@ -18,7 +18,7 @@ Post-Increment (a++): The value of a is incremented after its current value is a
 Pre-Increment (++a): The value of a is incremented before it is assigned to c, which may lead to different outcomes compared to post-increment.
 
 
-About Type Casting:
+//About Type Casting:
 
 Compiler hamesha chooti data Type ko implicityly bri data type mai convert krta hai
 Compiler hamesha up-casting krta hai down-casting ni krta
@@ -26,7 +26,7 @@ Compiler hamesha up-casting krta hai down-casting ni krta
 
 
 
-what is short-circuiting?
+//what is short-circuiting?
 
 Short-circuiting is a programming concept where the evaluation of a logical expression stops as soon as the overall outcome is determined. This is often used with logical operators like && (AND) and || (OR) in languages like Java, Python, and others.
 
@@ -42,7 +42,7 @@ Efficiency: By not evaluating the second operand if the result is already known,
 Preventing Errors: Short-circuiting can prevent errors by skipping the evaluation of expressions that might cause exceptions or invalid operations.
 
 
-impliit And Explicit Type Casting:
+//impliit And Explicit Type Casting:
 
 Implicit Casting (Widening Casting):
 
@@ -66,7 +66,7 @@ It involves no data loss because you're converting to a larger data type that ca
 
 
 
-Explicit Casting (Narrowing Casting):
+//Explicit Casting (Narrowing Casting):
 
 Definition: Explicit casting is required when converting a larger data type into a smaller data type. Since this can lead to data loss or precision issues, the programmer must manually specify the casting.
 Example: Converting a double to an int, or a long to a short.
@@ -85,7 +85,7 @@ Key Points:
 Explicit casting must be done manually by the programmer using the cast operator (type).
 It can lead to data loss or precision loss, especially when converting from a floating-point type to an integer type or from a larger integer type to a smaller one.
 
-Summary:
+//Summary:
 
 Implicit Casting (Widening):
 
@@ -103,3 +103,218 @@ Possible data loss.
 From larger to smaller data type.
 Example: double → int, long → short.
 Understanding these concepts is crucial when working with different data types in Java to ensure that your conversions are both safe and accurate.
+
+
+
+
+
+//what is dangling if in programming
+
+A dangling if in programming refers to an ambiguous situation where an else clause could be associated with more than one if statement, leading to confusion about which if the else corresponds to. This occurs in programming languages that allow nested if statements without requiring explicit block delimiters like braces {}.
+
+Example of Dangling if Problem:
+
+
+if (condition1)
+    if (condition2)
+        // statement1
+    else
+        // statement2
+
+
+
+In the example above, it’s unclear whether the else clause is intended to pair with the first if (condition1) or the second if (condition2). This ambiguity can lead to unexpected behavior.
+
+How It Works:
+
+Most languages resolve this ambiguity by associating the else with the nearest preceding unmatched if. In the example, else will pair with if (condition2).
+
+So the code:
+
+
+if (condition1)
+    if (condition2)
+        // statement1
+    else
+        // statement2
+
+Is interpreted as:
+
+
+if (condition1) {
+    if (condition2) {
+        // statement1
+    } else {
+        // statement2
+    }
+}
+
+
+Avoiding the Dangling if Problem:
+To avoid this issue, it’s best to use braces {} to clearly define blocks of code, even when they are optional. This makes the code's intent explicit.
+
+Corrected Example:
+
+if (condition1) {
+    if (condition2) {
+        // statement1
+    } else {
+        // statement2
+    }
+}
+Or, if the else should match the first if:
+
+
+if (condition1) {
+    if (condition2) {
+        // statement1
+    }
+} else {
+    // statement2
+}
+
+
+
+Using braces not only avoids ambiguity but also enhances readability and maintainability of the code.
+
+
+
+//switch statement has more run-time performance than if-else
+
+what is type interferene in java and how to use to?
+
+Type inference in Java refers to the compiler's ability to automatically determine the type of a variable based on the context in which it is used, without explicit type declarations by the programmer. Introduced in Java 7 and enhanced in later versions, type inference is especially useful for improving code readability and reducing redundancy.
+
+How Type Inference Works:
+Java uses type inference in several contexts, including:
+
+Generics:
+ When working with generic types, the compiler can often infer the type arguments, allowing you to omit them.
+
+The var keyword:
+ Introduced in Java 10, this allows the compiler to infer the type of a local variable from the right-hand side of the assignment.
+
+Type Inference in Generics:
+
+Before Java 7, you had to specify the type parameters explicitly when creating instances of generic classes. For example:
+
+List<String> list = new ArrayList<String>();
+
+In Java 7 and later, you can take advantage of the "diamond operator" (<>), and the compiler will infer the type parameters:
+
+
+
+List<String> list = new ArrayList<>();
+Here, the compiler infers that ArrayList is of type String based on the declaration of list.
+
+Type Inference with var:
+
+Java 10 introduced the var keyword, which allows you to declare a local variable without specifying its type explicitly. The compiler infers the type based on the initializer.
+
+Example:
+
+
+var message = "Hello, Java!";
+var number = 10;
+In this example, the compiler infers that message is of type String and number is of type int.
+
+Rules and Limitations:
+
+Only for local variables:
+
+The var keyword can only be used for local variables inside methods, constructors, and initializers. It can't be used for instance or class variables.
+
+Can't be null: You can't assign null to a var variable because the compiler can't infer the type from null.
+
+Once inferred, the type is fixed:
+The type inferred for a variable is fixed at the time of initialization. For example, var number = 10; infers that number is an int, and you can't later assign a value of another type to it.
+
+
+
+
+//1. Primitive Data Types
+Primitive data types are the most basic types of data built into the Java language. They are predefined by the language and named by a keyword. Java has 8 primitive data types:
+
+byte:
+
+Size: 8 bits
+Range: -128 to 127
+Example: byte b = 100;
+
+short:
+
+Size: 16 bits
+Range: -32,768 to 32,767
+Example: short s = 10000;
+
+int:
+
+Size: 32 bits
+Range: -2^31 to 2^31-1
+Example: int i = 100000;
+
+long:
+
+Size: 64 bits
+Range: -2^63 to 2^63-1
+Example: long l = 100000L;
+
+float:
+
+Size: 32 bits
+Range: Approximately ±3.40282347E+38F
+Example: float f = 10.5f;
+
+double:
+
+Size: 64 bits
+Range: Approximately ±1.79769313486231570E+308
+Example: double d = 10.5;
+
+char:
+
+Size: 16 bits (because it uses the Unicode character set)
+Range: '\u0000' (or 0) to '\uffff' (or 65,535)
+Example: char c = 'A';
+
+boolean:
+
+Size: Not precisely defined (depends on JVM, but typically 1 bit or 1 byte)
+Values: true or false
+Example: boolean flag = true;
+
+
+Characteristics of Primitive Data Types:
+
+Fixed size: Each primitive type has a fixed size, which makes them efficient in terms of memory usage.
+Stored by value: The actual value is stored directly in the memory location associated with the variable.
+No methods: Primitive data types do not have methods associated with them.
+Default values: When declared as class members, they have default values (e.g., 0 for integers, false for boolean).
+
+
+
+//2. Non-Primitive Data Types
+
+Non-primitive data types, also known as reference types, are more complex and include objects and arrays. Unlike primitive data types, non-primitive types are created by the programmer.
+
+Examples of non-primitive data types include:
+
+Classes: Custom types created using the class keyword.
+Example: String str = "Hello"; (Here, String is a class.)
+
+Arrays: A collection of elements of the same type.
+Example: int[] arr = {1, 2, 3};
+
+Interfaces: A collection of abstract methods that a class can implement.
+Example: List<Integer> list = new ArrayList<>(); (Here, List is an interface.)
+
+Enums: A special data type that enables for a variable to be a set of predefined constants.
+Example: enum Color { RED, GREEN, BLUE }
+
+Characteristics of Non-Primitive Data Types:
+
+
+Variable size: The size of non-primitive data types depends on the object and its properties.
+Stored by reference: The variable stores a reference (memory address) to the actual data.
+Can have methods: Non-primitive types can have methods and properties associated with them.
+Default value: The default value of a non-primitive data type (when declared as class members) is null.

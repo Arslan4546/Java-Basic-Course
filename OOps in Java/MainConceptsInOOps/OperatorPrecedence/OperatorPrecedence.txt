@@ -1,0 +1,82 @@
+In Java, the precedence of operators determines the order in which different operators in an expression are evaluated. Operators with higher precedence are evaluated before operators with lower precedence. If operators have the same precedence, their associativity determines the order of evaluation (usually left-to-right or right-to-left).
+
+Here is a list of some common Java operators in order of precedence, from highest to lowest:
+
+Postfix (highest precedence):
+
+expr++, expr-- (post-increment, post-decrement)
+
+Unary:
+
+++expr, --expr (pre-increment, pre-decrement)
++, - (unary plus, unary minus)
+~ (bitwise NOT)
+! (logical NOT)
+(type) (type cast)
+
+Multiplicative:
+
+*, /, % (multiplication, division, modulus)
+
+Additive:
+
++, - (addition, subtraction)
+
+Shift:
+
+<<, >>, >>> (left shift, right shift with sign extension, right shift with zero fill)
+
+Relational:
+
+<, >, <=, >= (less than, greater than, less than or equal to, greater than or equal to)
+instanceof (type comparison)
+
+Equality:
+
+==, != (equal to, not equal to)
+
+Bitwise AND:
+
+&
+
+Bitwise XOR:
+
+^
+
+Bitwise OR:
+
+|
+
+Logical AND:
+
+&&
+
+Logical OR
+
+||
+
+Ternary (conditional):
+
+? :
+
+Assignment (lowest precedence):
+
+=, +=, -=, *=, /=, %=, <<=, >>=, >>>=, &=, ^=, |=
+
+Example:
+
+Consider the expression:
+
+int result = 10 + 2 * 5;
+Here, multiplication (*) has higher precedence than addition (+), so 2 * 5 is evaluated first, resulting in 10 + 10, which then gives 20.
+
+Understanding operator precedence is crucial to avoid logic errors in your Java code. When in doubt, you can always use parentheses () to explicitly specify the order of operations.
+
+
+
+
+
+
+
+
+
