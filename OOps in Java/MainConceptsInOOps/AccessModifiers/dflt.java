@@ -30,6 +30,8 @@
 
 // // iss mai ye hota hai k package same ho class chahee different hoon ap variabes or methods ko easily access kr skty hain
 
+//It cannot be accessed from outside the package. It provides more accessibility than private. But, it is more restrictive than protected, and public.
+
 
 
 

@@ -1,3 +1,12 @@
+// Public Access modifier
+// The public access modifier is specified using the keyword public. 
+
+// The public access modifier has the widest scope among all other access modifiers.
+// Classes, methods, or data members that are declared as public are accessible from everywhere in the program. There is no restriction on the scope of public data members.
+
+
+
+
 // // The public access modifier is accessible everywhere. It has the widest scope among all other modifiers.
 
 
