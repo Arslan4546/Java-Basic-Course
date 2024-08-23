@@ -1,0 +1,6 @@
+Types of Constructors in Java:
+Now is the correct time to discuss the types of the constructor, so primarily there are three types of constructors in Java are mentioned below:
+
+1. Default Constructor
+2. Parameterized Constructor
+3. Copy Constructor
