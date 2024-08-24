@@ -6,3 +6,63 @@
 6. abstract method cannot contain any body
 
 
+Abstract class in Java:
+A class which is declared with the abstract keyword is known as an abstract class in Java. It can have abstract and non-abstract methods (method with the body).
+
+Before learning the Java abstract class, let's understand the abstraction in Java first.
+
+Abstraction in Java:
+Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+
+Another way, it shows only essential things to the user and hides the internal details, for example, sending SMS where you type the text and send the message. You don't know the internal processing about the message delivery.
+
+
+Abstraction lets you focus on what the object does instead of how it does it.
+
+Ways to achieve Abstraction:
+There are two ways to achieve abstraction in java:
+
+1. Abstract class (0 to 100%)
+2. Interface (100%)
+
+Abstract class in Java:
+
+A class which is declared as abstract is known as an abstract class. It can have abstract and non-abstract methods. It needs to be extended and its method implemented. It cannot be instantiated.
+
+Points to Remember:
+
+1. An abstract class must be declared with an abstract keyword.
+2. It can have abstract and non-abstract methods.
+3. It cannot be instantiated.
+4. It can have constructors and static methods also.
+5. It can have final methods which will force the subclass not to change the body of the method.
+
+
+
+
+Java Abstract classes and Java Abstract methods:
+
+An abstract class is a class that is declared with an abstract keyword.
+An abstract method is a method that is declared without implementation.
+An abstract class may or may not have all abstract methods. Some of them can be concrete methods
+A method-defined abstract must always be redefined in the subclass, thus making overriding compulsory or making the subclass itself abstract.
+Any class that contains one or more abstract methods must also be declared with an abstract keyword.
+There can be no object of an abstract class. That is, an abstract class can not be directly instantiated with the new operator.
+An abstract class can have parameterized constructors and the default constructor is always present in an abstract class.
+
+Algorithm to implement abstraction in Java:
+
+Determine the classes or interfaces that will be part of the abstraction.
+Create an abstract class or interface that defines the common behaviors and properties of these classes.
+Define abstract methods within the abstract class or interface that do not have any implementation details.
+Implement concrete classes that extend the abstract class or implement the interface.
+Override the abstract methods in the concrete classes to provide their specific implementations.
+Use the concrete classes to implement the program logic.
+
+When to use abstract classes and abstract methods?:
+
+There are situations in which we will want to define a superclass that declares the structure of a given abstraction without providing a complete implementation of every method. Sometimes we will want to create a superclass that only defines a generalization form that will be shared by all of its subclasses, leaving it to each subclass to fill in the details.
+
+Consider a classic “shape” example, perhaps used in a computer-aided design system or game simulation. The base type is “shape” and each shape has a color, size, and so on. From this, specific types of shapes are derived(inherited)-circle, square, triangle, and so on — each of which may have additional characteristics and behaviors. For example, certain shapes can be flipped. Some behaviors may be different, such as when you want to calculate the area of a shape. The type hierarchy embodies both the similarities and differences between the shapes.
+
+
