@@ -1,6 +1,4 @@
-// Example 1 
 
-// class A {
 //     int x = 10;
 
 //     void print() {
@@ -178,3 +176,43 @@
 
 // Engine is starting...
 // Car is starting with 18 inch wheels and V8 engine.
+
+
+
+// method overloading
+
+
+
+// Superclass
+class Animal {
+    // Method to be overridden
+    void sound() {
+        System.out.println("The animal makes a sound");
+    }
+}
+
+// Subclass
+class Dog extends Animal {
+    // Overriding the sound() method
+    @Override
+    void sound() {
+        System.out.println("The dog barks");
+    }
+}
+
+// Main class to test the method overriding
+public class TestOverriding {
+    public static void main(String[] args) {
+        // Create an Animal object
+        Animal myAnimal = new Animal();
+        myAnimal.sound(); // Calls the method from Animal class
+
+        // Create a Dog object
+        Dog myDog = new Dog();
+        myDog.sound(); // Calls the overridden method from Dog class
+
+        // Using polymorphism
+        Animal myPet = new Dog();
+        myPet.sound(); // Calls the overridden method from Dog class
+    }
+}
