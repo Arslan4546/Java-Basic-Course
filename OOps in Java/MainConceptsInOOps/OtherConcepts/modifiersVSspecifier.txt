@@ -1,0 +1,48 @@
+1. Access Modifiers:
+
+Access modifiers control the visibility or accessibility of classes, methods, and variables from other classes or packages.
+
+Types of Access Modifiers:
+
+private: Accessible only within the class.
+default (no modifier): Accessible within the same package.
+protected: Accessible within the same package and subclasses.
+public: Accessible from everywhere.
+
+Example of Access Modifiers:
+
+class Example {
+
+    private int privateMember = 10; // Accessible only within this class
+    int defaultMember = 20;         // Accessible within the same package (default)
+    protected int protectedMember = 30; // Accessible within the same package and subclasses
+    public int publicMember = 40;  
+      // Accessible everywhere
+}
+
+
+2. Access Specifiers:
+
+"Access specifier" is a broader term and can refer to both access modifiers and the overall concept of access control for class members. It sometimes includes specifiers like static, final, abstract, etc., which control more than just visibility, such as behavior or inheritance.
+
+Specifiers include:
+
+static: Indicates that a member belongs to the class rather than instances of the class.
+final: Prevents modification after assignment or extension (for classes).
+abstract: Used with classes or methods, indicates that a method must be implemented in subclasses.
+
+Example of Access Specifiers:
+
+
+class Example {
+    public static final int CONSTANT = 100; // static: shared by all instances; final: cannot be changed
+    
+    public final void display() {           // final: method cannot be overridden
+        System.out.println("Display method");
+    }
+}
+
+Key Difference:
+
+Access modifiers control the visibility and accessibility (e.g., public, private, protected).
+Access specifiers are a broader concept, including access control but also covering behavior and properties (e.g., static, final, abstract).
