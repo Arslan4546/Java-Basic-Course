@@ -1,0 +1,124 @@
+What is inheritance in Java?
+
+Inheritance allows one class to inherit properties and behavior from another class.
+
+What is method overriding in Java?
+
+Method overriding allows a subclass to provide a specific implementation of a method defined in its parent class.
+
+Can a class in Java inherit from multiple classes?
+
+No, Java supports single inheritance, but a class can implement multiple interfaces.
+
+What is the super keyword used for in Java?
+
+The super keyword is used to access the parent class's methods, constructors, or variables.
+
+What is constructor chaining in inheritance?
+
+Constructor chaining is when a subclass constructor calls a parent class constructor using super().
+
+Can private members be inherited in Java?
+
+No, private members are not inherited by subclasses.
+
+What is the purpose of the this keyword in Java?
+
+The this keyword refers to the current class instance.
+
+What is the Object class in Java?
+
+The Object class is the root superclass for all classes in Java.
+
+What is method hiding in Java?
+
+Method hiding occurs when a static method in a subclass has the same signature as a static method in the parent class.
+
+Can a subclass inherit the constructor of a parent class?
+
+No, constructors are not inherited, but they can be called using super().
+
+What is the difference between super() and this() in constructors?
+
+super() calls the parent class constructor, while this() calls another constructor within the same class.
+
+Can a subclass override a final method in Java?
+
+No, a final method cannot be overridden by a subclass.
+
+What happens if a subclass does not explicitly call a parent class constructor?
+
+The compiler automatically inserts a call to the parent class's no-argument constructor.
+
+What is an abstract class in Java?
+
+An abstract class is a class that cannot be instantiated and may contain abstract methods that subclasses must implement.
+
+Can an abstract class be inherited in Java?
+
+Yes, abstract classes can be inherited, but the subclass must implement all abstract methods.
+What is an interface in Java?
+
+
+An interface is a reference type that can contain abstract methods, static methods, and default methods.
+Can a class implement multiple interfaces?
+
+
+Yes, a class can implement multiple interfaces in Java.
+
+Can a subclass access protected members of a parent class?
+
+Yes, a subclass can access protected members of the parent class, even if they are in a different package.
+
+Can a subclass access default (package-private) members of a parent class?
+
+Yes, but only if the subclass is in the same package as the parent class.
+
+What is multiple inheritance?
+
+Multiple inheritance refers to a class inheriting from more than one class, which is not supported in Java.
+
+How do you prevent a class from being inherited?
+
+You can prevent a class from being inherited by declaring it as final.
+
+What is the difference between inheritance and composition in Java?
+
+Inheritance is an "is-a" relationship, while composition is a "has-a" relationship.
+
+What is the @Override annotation used for?
+
+The @Override annotation indicates that a method is intended to override a method in the parent class.
+
+Can you call a parent class method from a subclass?
+
+Yes, you can call a parent class method using the super keyword or directly if not overridden.
+
+What happens if a subclass does not override a method from the parent class?
+
+The subclass inherits and can use the method as it is defined in the parent class.
+
+Can a subclass have additional methods apart from those inherited?
+
+Yes, a subclass can have its own methods in addition to inherited methods.
+
+What is the difference between overriding and overloading in Java?
+
+Overriding changes the implementation of an inherited method, while overloading involves creating methods with the 
+same name but different parameters.
+
+What happens when you override the toString() method in Java?
+
+Overriding toString() allows you to provide a custom string representation of an object.
+
+Can you inherit from a class that is in a different package?
+
+Yes, but you must import the class, and the parent class members must be public or protected.
+
+What is the purpose of the instanceof operator in inheritance?
+
+The instanceof operator checks if an object is an instance of a specific class or subclass.
+
+
+
+
