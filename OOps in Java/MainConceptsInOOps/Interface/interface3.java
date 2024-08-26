@@ -6,7 +6,7 @@ interface  A {
 //    } // java k purany version mai ye hota tha k jo bhi method interface mai aye ga uss ko child classes lazmi implement kryn gee but new version ye cheez eleminate kr dee hai or ab ap default sath lga k idhr kuch bhi add krskty hain or apko child classes mai implement krny ki koi zaroorat nhi hai 
 
 }
-interface  B extends  A {
+interface B extends  A {
 
     void  show();
 }
@@ -23,10 +23,10 @@ class Arslan implements B {
     }
     
 }
-class  Main{
+class Main{
 
     public static void main(String[] args) {
-       B a = new Arslan();
+      B a = new Arslan();
         a.show();
         a.Disp();
     }
