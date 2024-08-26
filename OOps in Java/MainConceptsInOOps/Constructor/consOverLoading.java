@@ -57,9 +57,7 @@
 //Another Example 
 
 
-
 // public class student {
-
 //     int rollNo;
 //     String name;
 //     double fee;
@@ -85,23 +83,28 @@
 //         this.name = name;
 //     }
 
-
-//     this is the built-in method in java to return any string value
 //     @Override
 //     public String toString() {
         
 //         return "name : "+this.name+" Roll Number :"+this.rollNo+"  Fee : "+this.fee;
 
 //     }
-
-
-//     public static void main(String[] args) {
-//         student s =new student(123,"Arslan",12);
-//         System.out.println(s);
-        
-//     }
    
 
     
     
 // }
+
+// class Mainclass  {
+//    Mainclass(){
+//     super();
+
+//    }
+
+//  public static void main(String[] args) {
+//     student s = new  student();
+    
+//     System.out.println(s);
+//  }
+// }
+
