@@ -1,104 +1,74 @@
-// Understanding the real scenario of Abstract class
+// Abstract class having constructor, data member and methods
 
-// In this example, Shape is the abstract class, and its implementation is provided by the Rectangle and Circle classes.
-
-// Mostly, we don't know about the implementation class (which is hidden to the end user), and an object of the implementation class is provided by the factory method.
-
-// A factory method is a method that returns the instance of the class. We will learn about the factory method later.
-
-
-// In this example, if you create the instance of Rectangle class, draw() method of Rectangle class will be invoked.
+// An abstract class can have a data member, abstract method, method body (non-abstract method), constructor, and even main() method.
 
 
 
-// abstract class Shape{  
 
-// abstract void draw(); 
+//Example of an abstract class that has abstract and non-abstract methods  
 
+//  abstract class Bike{  
+
+//    Bike(){
+
+// System.out.println("bike is created");
+
+// }  
+//    abstract void run();  
+
+//    void changeGear(){
+
+// System.out.println("gear changed");
+
+// }  
+//  }  
+// //Creating a Child class which inherits Abstract class  
+
+//  class Honda extends Bike{ 
+
+//  void run(){
+// System.out.println("running safely..");
+
+// }  
+//  }  
+
+// //Creating a Test class which calls abstract and non-abstract methods  
+//  class TestAbstraction2{  
+//  public static void main(String args[]){  
+//   Bike obj = new Honda();  
+//   obj.run();  
+//   obj.changeGear(); 
+
+//  }  
 // }  
 
 
-// //In real scenario, implementation is provided by others i.e. unknown by end user  
+// output:
+// bike is created
+// running safely..
+// gear changed
 
-// class Rectangle extends Shape{  
 
-// void draw(){
+// Rule: If there is an abstract method in a class, that class must be abstract.
 
-//     System.out.println("drawing rectangle");
 
-// }  
-// }  
 
-// class Circle1 extends Shape{  
- 
-// void draw(){
-    
-//     System.out.println("drawing circle");
+// class Bike12{  
+
+// abstract void run();  
 
 // }  
-// }  
 
-// //In real scenario, method is called by programmer or user  
-
-// class TestAbstraction1{  
-
-// public static void main(String args[]){  
-
-// Shape s=new Circle1();//In a real scenario, object is provided through method, e.g., getShape() method  
-// s.draw();  
-
-// }  
-// }  
-
-
-// // OutPut:
-// // drawing circle
-
-
-// Another example of Abstract class in java
+// output:
+// compile time error
 
 
 
-// abstract class Bank{  
+// Rule: If you are extending an abstract class that has an abstract method, you must either provide the implementation of the method or make this class abstract.
 
-// abstract int getRateOfInterest(); 
+// Another real scenario of abstract class
 
-// }    
-// class SBI extends Bank{   
-
-// int getRateOfInterest(){
-
-//     return 7;
-// }    
-// }    
-// class PNB extends Bank{  
-
-// int getRateOfInterest(){
-
-//     return 8;
-
-// }    
-// }    
-    
-// class TestBank{    
-// public static void main(String args[]){  
-
-// Bank b;  
-// b=new SBI(); 
-
-// System.out.println("Rate of Interest is: "+b.getRateOfInterest()+" %"); 
-
-// b=new PNB();  
-
-// System.out.println("Rate of Interest is: "+b.getRateOfInterest()+" %");  
-
-// }}    
-
-
-// Output:
-// Rate of Interest is: 7 %
-// Rate of Interest is: 8 %
-
+// The abstract class can also be used to provide some implementation of the interface. In such case, the end user may not be forced to override all the methods of the interface.
 
 
 // Java program to illustrate the
@@ -134,7 +104,8 @@
 //         this.radius = radius;
 //     }
 
-//     @Override double area()
+//     @Override 
+    // double area()
 //     {
 //         return Math.PI * Math.pow(radius, 2);
 //     }
