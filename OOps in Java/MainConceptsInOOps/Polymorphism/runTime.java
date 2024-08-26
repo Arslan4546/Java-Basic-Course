@@ -115,3 +115,8 @@
 // Method Overriding: Both Dog and Cat classes override the sound() method of the Animal class.
 // Runtime Polymorphism: The method to be executed (whether it's the sound() method of Animal, Dog, or Cat) is decided at runtime based on the actual object that the reference variable points to. This is what is referred to as runtime polymorphism.
 // Thus, runtime polymorphism is essentially method overriding polymorphism, and the terms can be used interchangeably.
+
+
+// method overridng rules 
+
+// 1. this will check if the parent has the method if not then it will show the error if has then it will again check if the child class has the same method if not then print the parent method if child has then it will override the  child class method

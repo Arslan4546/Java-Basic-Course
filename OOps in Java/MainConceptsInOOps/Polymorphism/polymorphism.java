@@ -6,31 +6,6 @@
 
 // For example, think of a superclass called Animal that has a method called animalSound(). Subclasses of Animals could be Pigs, Cats, Dogs, Birds - And they also have their own implementation of an animal sound (the pig oinks, and the cat meows, etc.):
 
-// Example:
-
-// class Animal {
-//   public void animalSound() {
-//     System.out.println("The animal makes a sound");
-//   }
-// }
-
-// class Pig extends Animal {
-//   public void animalSound() {
-//     System.out.println("The pig says: wee wee");
-//   }
-// }
-
-// class Dog extends Animal {
-//   public void animalSound() {
-//     System.out.println("The dog says: bow wow");
-//   }
-// }
-
-
-
-//Remember from the Inheritance chapter that we use the extends keyword to inherit from a class.
-//Now we can create Pig and Dog objects and call the animalSound() method on both of them:
-
 //Example
 
 
@@ -66,3 +41,6 @@
 // Why And When To Use "Inheritance" and "Polymorphism"?
 // - It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
 
+// method overridng rules 
+
+// this will check if the parent has the method if not then it will show the error if has then it will again check if the child class has the same method if not then print the parent method if child has then it will override the  child class method
