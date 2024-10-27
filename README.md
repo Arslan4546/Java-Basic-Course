@@ -3,16 +3,16 @@ Welcome to the Java Concepts Course! This repository serves as a comprehensive g
 
 ## Course Overview
 ## Key Features:
-Complete Java Concepts: Explore fundamental and advanced Java topics, including:
-Basic Syntax: Learn the building blocks of Java programming.
-Data Types & Variables: Understand how to store and manipulate data effectively.
-Control Structures: Master decision-making and looping constructs.
-Object-Oriented Programming: Dive deep into the principles of OOP, including classes, objects, inheritance, polymorphism, and encapsulation.
-Exception Handling: Learn how to handle errors gracefully.
-Collections Framework: Discover how to manage groups of objects efficiently.
-Multithreading: Understand the principles of concurrent programming.
-Java I/O: Explore input and output operations with files and streams.
-Java APIs: Get familiar with Java libraries and frameworks that enhance productivity.
+### Complete Java Concepts: Explore fundamental and advanced Java topics, including:
+## Basic Syntax: Learn the building blocks of Java programming.
+## Data Types & Variables: Understand how to store and manipulate data effectively.
+## Control Structures: Master decision-making and looping constructs.
+## Object-Oriented Programming: Dive deep into the principles of OOP, including classes, objects, inheritance, polymorphism, and encapsulation.
+## Exception Handling: Learn how to handle errors gracefully.
+## Collections Framework: Discover how to manage groups of objects efficiently.
+## Multithreading: Understand the principles of concurrent programming.
+## Java I/O: Explore input and output operations with files and streams.
+## Java APIs: Get familiar with Java libraries and frameworks that enhance productivity.
 
 ## Learning Objectives:
 Gain a thorough understanding of Java programming concepts and their practical applications.
