@@ -40,7 +40,7 @@ Feel free to contribute! Your feedback and enhancements are welcome.
 [Arslan's LinkedIn Profile](https://www.linkedin.com/in/arslan4546/)
 
 ### Facebook
-[Arslan's Facebook Page](https://www.facebook.com/Arslan4546)
+[Arslan's Facebook Profile](https://www.facebook.com/Arslan4546)
 
 ### Instagram
 [Arslan's Instagram Profile](https://www.instagram.com/arslantariq4546/)
