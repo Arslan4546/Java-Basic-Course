@@ -36,14 +36,16 @@ Feel free to contribute! Your feedback and enhancements are welcome.
 
 ---
 
-## 📬 Contact Me
+## 📫 Contact Me
 
-- **LinkedIn**: [Arslan Tariq](https://www.linkedin.com/in/arslan4546/)
-- **Instagram**: [Arslan Tariq](https://www.instagram.com/arslantariq4546/)
--  **Threads**: [Arslan Tariq](https://www.threads.net/@arslantariq4546)
-- **Facebook**: [Arslan Tariq](https://www.facebook.com/Arslan4546)
-- **Email**: [arslantariq4546@gmail.com](mailto:arslantariq4546@gmail.com)
+I’d love to connect and discuss potential projects, collaboration opportunities, or any exciting ideas you might have! Feel free to reach out through any of the following platforms:
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arslan4546/)
+[![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github&logoColor=white)](https://github.com/Arslan4546)
+[![Facebook](https://img.shields.io/badge/-Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/Arslan4546)
+[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/arslantariq4546)
+[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:arslantariq4546@gmail.com)
 
 ---
 
-Thank you for visiting my GitHub! Connect with me on social media, and happy coding!
+Thank you for visiting! Let’s build something amazing together with Flutter! 🌟 
